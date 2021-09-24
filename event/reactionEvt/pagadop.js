@@ -12,7 +12,7 @@ module.exports.run = async (bot, messageReaction, user) => {
      embed = new Discord.MessageEmbed()
        .setColor(0x00FF00)
        .setTitle(m.embeds[0].title)
-       .setThumbnail("https://imgur.com/WA1OQoN.png")
+       .setThumbnail("https://files.lu-rp.ovh/static/assets/images/ordenadores/pacific.png")
        .addField(m.embeds[0].fields[0].name, m.embeds[0].fields[0].value)
        .addField(m.embeds[0].fields[1].name, m.embeds[0].fields[1].value)
        .addField(m.embeds[0].fields[2].name, m.embeds[0].fields[2].value)

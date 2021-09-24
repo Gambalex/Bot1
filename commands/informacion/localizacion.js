@@ -6,9 +6,8 @@ module.exports.run = async (bot, message) => {
 
         .setTitle("Los Santos Medical Assistance | Localización")
         .setColor(0x037FDA)
-        .setDescription("Nos encontramos justo en frente de LifeInvader, en Rockford Hills. ¿Tienes alguna duda? mandanos un correo a **info@lsma.es**")
-        .setImage("https://i.imgur.com/nrIN7ez.jpg")
-    
+        .setDescription("Nos encontramos justo en Little Seoul, en Deckter Street. ¿Tienes alguna duda? mandanos un correo a **info@lsma.es**")
+
     message.channel.send({embed}).catch();
 
 }

@@ -1,14 +1,17 @@
 const Discord = require('discord.js'); let { readdirSync } = require('fs'); 
 
 function precenseUpdate(bot) {
-    let datos = ["Los Santos Medical Assistance" , "¡Tu vida, es la nuestra!", "Leyendas Urbanas RP🎭"]
+    let datos = ["Los Santos Medical Assistance" , "¡Tu vida, es la nuestra!", "Oposiciones Abiertas", "Leyendas Urbanas RP🎭"]
     setInterval(function() {
             bot.user.setActivity(datos[0], {type:'PLAYING'});
             setTimeout(function() {
                 bot.user.setActivity(datos[1], {type:'PLAYING'});
                 setTimeout(function() {
                     bot.user.setActivity(datos[2], {type:'PLAYING'});
-                }, 5000)
+                    setTimeout(function() {
+                        bot.user.setActivity(datos[3], {type:'PLAYING'});
+                            }, 5000)        
+                    }, 5000)
             }, 5000)
     }, 15000)
 }
@@ -57,6 +60,12 @@ function reloadC(bot) {
       delete require.cache[require.resolve(`/app/commands/informacion/${file}`)]
     };
   };
+  
+  for(const file of readdirSync('/app/event/')) { 
+    if(file.endsWith(".js")){
+      delete require.cache[require.resolve(`/app/event/${file}`)]
+    };
+  };
 
   LoadC(bot)
   
@@ -67,5 +76,6 @@ function reloadC(bot) {
 
 module.exports = {
     precenseUpdate,
-    reloadC
+    reloadC,
+    LoadC
 }

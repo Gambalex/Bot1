@@ -55,18 +55,22 @@ module.exports.help = {
   
     let embed = new Discord.MessageEmbed()
         //.setAuthor('LSMA', 'https://i.imgur.com/LJClyPX.png', 'https://www.lu-rp.es/foro/thread-10448.html')
-        .setTitle("¡Bienvenido a LSMA® application!")
-        .setDescription("Empresa médica dedicada a emergencias sanitarias, traslados no urgentes, farmacología y psiquiatría. ¡También en el Hospital de Pillbox!")
+        .setTitle("¡Bienvenido a LSMA® Aplicacion de empleados!")
+        .setDescription("Esta es la aplicacion oficial para todos los miembros de LSMA Group.")
         .setColor(0x037FDA)
         .addField("Menú de navegación", "¡Accede directamente desde aquí al apartado que desees!")
     
-        .addField("Contrata los Servicios", "<#737592002358673420>" , true)
-        .addField("Unete a nosotros", "<#737736774218154094>" , true)
-        .addField("Farmacia", "<#737591727962980352>" , true)
+        .addField("Normativa", "<#888973963752013844>" , true)
+        .addField("Noticias", "<#888972426757681183>" , true)
+        .addField("Documentos", "<#888974173664329729>" , true)
     
-        .addField("Galeria de Imagenes", "<#737701864677703690>" , true)
-        .addField("Salud Mental", "<#749870390012280833>" , true)
-        .addField("Ubicación", "<#737730544623812660>" , true)
+        .addField("What's App", "<#888975291874156574>" , true)
+        .addField("Parking", "<#888976076146106408>" , true)
+        .addField("Material Didactico", "<#888977614620999740>" , true)
+
+        .addField("Sugerencias", "<#888984076667744277>" , true)
+        .addField("Vestimenta", "<#888976665789743134>" , true)
+        .addField("Aplicacion Manager", "<#890750111909556255>" , true)
     
   	    .setFooter('LSMA® DATA CENTER ', 'https://imgur.com/bKH6ZP8.png');
     message.channel.send({embed});
@@ -77,5 +81,5 @@ module.exports.help = {
 
 
 module.exports.help = {
-    name: "unetetexto" // Comando que tienes que poner en discord 
+    name: "unetetexto2" // Comando que tienes que poner en discord 
 };

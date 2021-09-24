@@ -12,14 +12,14 @@ module.exports.run = async (bot, messageReaction, user) => {
      embed = new Discord.MessageEmbed()
        .setColor(0x00FF00)
        .setTitle(m.embeds[0].title)
-       .setThumbnail("https://imgur.com/WA1OQoN.png")
+       .setThumbnail("https://files.lu-rp.ovh/static/assets/images/ordenadores/savings.png")
        .addField(m.embeds[0].fields[0].name, m.embeds[0].fields[0].value)
        .addField(m.embeds[0].fields[1].name, m.embeds[0].fields[1].value)
        .addField(m.embeds[0].fields[2].name, m.embeds[0].fields[2].value)
        .addField(m.embeds[0].fields[3].name, m.embeds[0].fields[3].value)  
        .addField(m.embeds[0].fields[4].name, "**Pagado**")
   
-  	   .setFooter('LSMA® DATA CENTER ', 'https://imgur.com/bKH6ZP8.png');           
+  	   .setFooter('LSMA® DATA CENTER ', 'https://imgur.com/bKH6ZP8.png');          
      m.edit(embed).catch(); 
     } 
     else{return null;};
@@ -27,5 +27,3 @@ module.exports.run = async (bot, messageReaction, user) => {
   });  
   
 };
-
-//;pago 1,234,567 ,, Division Aerea ,, PS05-0000-86217714345

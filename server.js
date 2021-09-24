@@ -88,4 +88,4 @@ for (const file of readdirSync("./event/")) {
   }
 }
 
-bot.login(process.env.token);
+bot.login(process.env.TOKEN);

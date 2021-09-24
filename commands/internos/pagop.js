@@ -18,8 +18,10 @@ module.exports.run = async (bot, message) => {
         .addField("Cantidad a pagar", "$ "+CantidadAP)
         .addField("Número de cuenta", Ncuenta)
         .addField("Beneficiario", Beneficiario)
-        .addField("Estado", "**Pendiente de pago**");
-    message.channel.send({embed}).then(m => m.react("💵"));
+        .addField("Estado", "**Pendiente de pago**")
+  
+   	   .setFooter('LSMA® DATA CENTER ', 'https://imgur.com/bKH6ZP8.png');
+    message.channel.send({embed}).then(m => m.react("💳"));
 
 };
 

@@ -53,29 +53,16 @@ module.exports.help = {
   */
   
   
-    let embed = new Discord.MessageEmbed()
-        //.setAuthor('LSMA', 'https://i.imgur.com/LJClyPX.png', 'https://www.lu-rp.es/foro/thread-10448.html')
-        .setTitle("¡Bienvenido a LSMA® application!")
-        .setDescription("Empresa médica dedicada a emergencias sanitarias, traslados no urgentes, farmacología y psiquiatría. ¡También en el Hospital de Pillbox!")
+      let embed = new Discord.MessageEmbed()
+        .setTitle("Departamento de Salud Mental")
         .setColor(0x037FDA)
-        .addField("Menú de navegación", "¡Accede directamente desde aquí al apartado que desees!")
-    
-        .addField("Contrata los Servicios", "<#737592002358673420>" , true)
-        .addField("Unete a nosotros", "<#737736774218154094>" , true)
-        .addField("Farmacia", "<#737591727962980352>" , true)
-    
-        .addField("Galeria de Imagenes", "<#737701864677703690>" , true)
-        .addField("Salud Mental", "<#749870390012280833>" , true)
-        .addField("Ubicación", "<#737730544623812660>" , true)
-    
-  	    .setFooter('LSMA® DATA CENTER ', 'https://imgur.com/bKH6ZP8.png');
-    message.channel.send({embed});
-
-  
-  // `Puedo meter variables dentro ${message}`, 'Solo texto' , "Solo texto"
+        .setImage("")
+        .setDescription("¡Habla con nuestra experto de la unidad del Departamento de Salud Mental! \n (Tiempo estimado de espera: De 2-10 minutos.)")
+        .setFooter('LSMA® DATA CENTER', 'https://images.vexels.com/media/users/3/136810/isolated/preview/85a11ddd9eaf0e9870707a68d640a5f8-icono-de-burbuja-de-servidor-by-vexels.png')
+    message.channel.send({embed}).then(m => m.react("📩")).catch();
 };
 
 
 module.exports.help = {
-    name: "unetetexto" // Comando que tienes que poner en discord 
+    name: "xdd" // Comando que tienes que poner en discord 
 };

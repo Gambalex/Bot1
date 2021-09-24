@@ -1,5 +1,5 @@
 {
-  "name": "weazelnews",
+  "name": "lsma-bot",
   "version": "0.0.1",
   "description": "acerca de? su bot",
   "main": "node server.js",

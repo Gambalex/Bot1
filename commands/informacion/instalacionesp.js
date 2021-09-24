@@ -4,14 +4,15 @@ module.exports.run = async (bot, message) => {
   
     let embed = new Discord.MessageEmbed()
 
-        .setTitle("Horario de disponibilidad")
-          .setDescription("Subdirector General LSMA® Moussa Badulaki. \n ¡Disponible actualmente! \n \n Correo électronico habilitado: moussabadulaki@lsma.es")
+        .setTitle("Mensaje Nuevo | LSMA DATA CENTER ")
+        .setDescription("El primero que me pase una foto de Kenshin")
         .setColor(0x037FDA) 
+ //       .setImage ("")
     message.channel.send({embed});
 
 };
 
 
 module.exports.help = {
-    name: "moussa"
+    name: "instalacionesp" 
 };
