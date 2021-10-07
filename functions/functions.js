@@ -10,9 +10,9 @@ function precenseUpdate(bot) {
                     bot.user.setActivity(datos[2], {type:'PLAYING'});
                     setTimeout(function() {
                         bot.user.setActivity(datos[3], {type:'PLAYING'});
-                            }, 5000)        
-                    }, 5000)
-            }, 5000)
+                         }, 5000)        
+                  }, 5000)
+           }, 5000)
     }, 15000)
 }
 
